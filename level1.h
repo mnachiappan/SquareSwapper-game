@@ -1,16 +1,15 @@
-#ifndef __LEVEL0_H__
-#define __LEVEL0_H__
-#include "level.h"
+#ifndef __LEVEL1_H__
+#define __LEVEL1_H__
 
+#include "level.h"
 class Square;
 
-class Level0 : public Level {
+class Level1 : public Level {
 public:
-	Level0();
+	Level1();
 	Square *createSquare();
 	Square *createSquare(int row, int column);
 	Square*** createGrid();
 };
-
 
 #endif

@@ -4,13 +4,15 @@
 #include "square.h"
 #include <string>
 
-class UnstableSquare : public Square {
-private:
-	static const std::string ADVANCED_SYMBOL;
-	static const std::string SQUARE_SYMBOL;
+class Board;
+class Xwindow;
 
-public:
+class UnstableSquare : public Square {
+	public:
+	UnstableSquare(int colour, int row, int column);
 	std::string getRepresentation();
+	int executeAbility(Board* board);
+	void printToWindowSpecial(Xwindow* window);
 };
 
 #endif
